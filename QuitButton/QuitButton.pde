@@ -1,7 +1,7 @@
 //Global Variables
 //Prototyping exit with key Board
 int buttonX, buttonY, buttonWidth, buttonHeight;
-color buttonColour, blue=#0024FF, red=#FF0000, resetWhite=#FFFFFF;
+color buttonColour, green=#24F03A, orange=#F05024, resetWhite=#FFFFFF;
 
 void setup() {
   size (600, 400); //Landscape Mode
@@ -15,9 +15,9 @@ void setup() {
 void draw() {
   println(mouseX, mouseY); 
   if ( mouseX>buttonX && mouseX<buttonX+buttonWidth && mouseY>buttonY && mouseY<buttonY+buttonHeight ) { 
-    buttonColour = red;
+    buttonColour = orange;
   } else { 
-    buttonColour = blue;
+    buttonColour = green;
   } 
   fill(buttonColour);
   rect(buttonX, buttonY, buttonWidth, buttonHeight);
